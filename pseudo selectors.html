@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ustiga mishka keganda o'rgartirish kiritish uchun */
+        #menu:hover {
+background: red;
+        }
+        
+        /* mishka ustiga borib bosilgandagi o'zgarishlar  */
+        #menu:active{
+            color: forestgreen;
+        }
+        p:active{
+            color: fuchsia;
+        }
+
+        /* activ holat shu havolaning ustiga kelganidagi o'zgarishlar  (ssilkalar va formlarda)ishlaydi( ko'pincha tugmalar bilan ishlashda foydalaniladi  (Tab)) */
+        #menu:focus{
+            color: gold;
+        }
+
+        /* birinchi p tegiga murojat qilmoqchi bo'lsak (first ni o'rniga last ni qo'llasak oxirgi p tegiga murojat qildi, boshqalariga murojat qilish uchun :nth-child(son) ishlatiladi) */
+        p:first-child{
+            color: yellow;
+        }
+
+        /* formlar uchun */
+        #chek:checked{
+outline: 2px dashed green;
+        }
+        #chek:not(checked){
+            outline: 2px dotted red;
+        }
+        /* #chek:required{}  */
+        /* #chek:not(required){} */
+
+        p::first-letter{
+            font-size: 50px;
+        }
+        p::first-line{
+            font-size: 35px;
+        }
+
+        /* textlarni belgilaganda o'zgartirish uchun (hammasini o'zgartiradi, agar faqat keragini o'zgartirmoqchi bo'lsak o,zimizga kerak joyini boshida yozamiz masalan p::selection{} */
+        ::selection{
+          color: red;
+          background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" id="menu">menu</a>
+    <a href=""> main</a>
+    <form action="">
+        <input type="checkbox" id="chek">
+    </form>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus in molestiae, quasi tenetur voluptates labore facere modi fuga odit aliquam esse consectetur excepturi. At corporis officia iste ullam fuga odit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est earum corrupti ratione error consectetur! Atque necessitatibus ducimus veniam nostrum quia..</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+   
+</body>
+</html>

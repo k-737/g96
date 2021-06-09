@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f9f9f9;
+    font-family: sans-serif;
+}
+#site{
+    margin: 0px auto;
+    border: 1px solid #dbdbdb;
+    width: 965px;
+    /* height: 500px; */
+    background-color: #fff;
+    padding-top: 45px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 60px;
+}
+#site h1 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 100;
+    margin-bottom: 35px;
+}
+#hmenu1{
+    /* height: 40px; */
+    list-style: none;
+    background-color: #545454;
+    padding-left: 5px;
+    margin-bottom: 40px;
+}
+#hmenu1 li {
+    float: left;
+    padding-right: 40px;
+}
+#hmenu1 li a {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #e3e3e3; 
+    text-decoration: none;
+    border-left: 1px solid #545454;
+    border-right: 1px solid #545454;
+} 
+#hmenu1 li a:hover{
+    background-color: #3d3d3d;
+    border-left: 1px solid #838383;
+    border-right: 1px solid #838383;
+}
+#hmenu1 .active{
+    background-color: #3d3d3d;
+    border-left: 1px solid #838383;
+    border-right: 1px solid #838383;
+}
+
+#vmenu{
+    border: 1px solid #c8c8c8;
+    list-style: none;
+    width: 240px;
+    float: left;
+}
+#vmenu li a{
+    height: 40px;
+    line-height: 40px;
+text-decoration: none;
+display: block;
+border-bottom: 1px solid #c8c8c8;
+text-indent: 20px;
+}
+#vmenu li a:hover, #vmenu .active{
+    text-indent: 35px;
+    background-color: #f9f9f9;
+}
+#main{
+    width: 678px;
+    float: right;
+}
+#main center{
+    padding: 0px;
+    /* margin-bottom: 35px; */
+}
+#main p{
+    padding: 22px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+#hmenu2{
+    /* height: 40px; */
+    list-style: none;
+    background-color: #e1e1e1;
+    padding-left: 5px;
+    margin-top: 38px;
+    padding-right: 40px;
+}
+#hmenu2 li {
+    float: left;
+    padding-right: 40px;
+}
+#hmenu2 li a {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #2c2c2c; 
+    text-decoration: none;
+} 
+#hmenu2 li a:hover, #hmenu2 .active{
+ text-decoration: underline; 
+}
+#footer{
+    float: right;
+    height: 40px;
+    line-height: 40px;
+}
+.clear{
+    clear: both;
+}

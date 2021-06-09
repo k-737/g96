@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* align atributi qayerda qo'llanilgan bo'lsa shunga tasir qiladi */
+        /* [align] {
+            color: red;
+            text-align: right;
+        }  */
+
+/* h1 tegi qayerda uchrasa shuni ichidagi align atributiga tasir qiladi */
+/* h1[align] {
+    color: blue;
+} */
+
+/* qaysi align degan atributda left buyrug'i turgan bo'lsa shunga tasir qiladi  */
+/* [align~="left"] {
+ color: chartreuse;
+} */
+
+/* qasyi classni ichida top- qatnashga bo'lsa shunga murojat qiladish uchun   */
+/* [class|=top] {
+    color: darkcyan;
+} */
+
+/* boshidagi so'zi o'xshash bolsa xisob deydigan bo'lsak */
+/* [class^=top] {
+    color: darkorchid;
+} */
+
+/* shu so'z bilan tugagan barchasi hisob deydigan bo'lsak  */
+/* [class$=ter] {
+    color: darksalmon;
+} */
+
+/* ichidan qidirish uchun */
+[class*=er] {
+    color: darkslategray;
+}
+    </style>
+</head>
+<body>
+    <h1 align="left" class="top-area">Lorem ipsum dolor sit amet.</h1>
+    <h2 class="top-header">Lorem ipsum dolor sit amet.</h2>
+    <h1 align="center" class="topmiddle">Lorem ipsum dolor sit amet.</h1>
+    <h2 align="center" class="topmiddle2">Lorem ipsum dolor sit amet.</h2>
+    <h1 class="footer">Lorem ipsum dolor sit amet.</h1>
+    <h1 align="center" class="2footer">Lorem ipsum dolor sit amet.</h1>
+</body>
+</html>
